@@ -1,95 +1,41 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Typography } from 'antd';
 
 export default function Home() {
+  const { Title, Paragraph } = Typography;
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+      {/* Welcome to [Your Name]'s Tech Hub! 👋
+Hello there! I'm Mohamed Shaaban, a passionate software engineer with a knack for both backend and front-end development, and occasional dives into the world of DevOps. 🚀
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+About Me:
+I thrive in the dynamic realm of software development, blending creativity with technical expertise to craft seamless digital experiences. My journey in the tech world has equipped me with a versatile skill set, enabling me to bring ideas to life across various layers of a project.
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+What I Do:
+Backend Maestro: From architecting robust server-side solutions to optimizing database performance, I'm your go-to person for all things backend.
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+Frontend Alchemist: I specialize in creating sleek and intuitive user interfaces. Transforming design concepts into responsive, user-friendly interfaces is where I excel.
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+DevOps Explorer: In the ever-evolving landscape of DevOps, I navigate the deployment and automation terrain, ensuring a smooth and efficient development pipeline.
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+Why Choose Me:
+Passion for Excellence: I am committed to delivering high-quality solutions that exceed expectations.
+
+Tech Enthusiast: I stay abreast of the latest technologies, always eager to implement cutting-edge tools in my projects.
+
+Collaborative Approach: I believe in effective communication and collaboration to ensure project success.
+
+Let's Connect:
+I'm always open to exciting new projects and collaborations. If you're looking for a dedicated and skilled software engineer to bring your ideas to life, let's connect!
+
+Contact Me | View My Portfolio */}
+      <Title>Welcome to [Your Name]'s Tech Hub! 👋</Title>
+      <Paragraph>
+        Hello there! I'm Mohamed Shaaban, a passionate software engineer with a
+        a knack for both backend and front-end development, and occasional dives
+        into the world of DevOps. 🚀
+      </Paragraph>
     </main>
   );
 }
